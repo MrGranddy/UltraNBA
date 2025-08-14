@@ -1,0 +1,22 @@
+loss = ssim
+basedir = logs
+datadir = /home/guests/{NAME}/ultrasound_data/original/LAB_AL
+pose_path = /home/guests/{NAME}/ultrasound_data/original/LAB_AL/poses_interpolated.npy
+dataset_type = us
+output_ch = 3
+
+n_iters = 500000
+r_warm_up_it = 10000
+
+probe_depth = 93
+probe_width = 38
+
+lrate=1.e-4
+lrate_decay=500
+
+L=16
+c2f=(0.1, 0.5)
+pose_lr=1.e-4
+pose_lr_end=1.e-5
+
+random_seed = 0

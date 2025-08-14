@@ -1,0 +1,9 @@
+monai
+torch==1.11.0
+torchvision>=0.9.1
+matplotlib
+configargparse
+tensorboard>=2.0
+tqdm
+opencv-python
+scipy
