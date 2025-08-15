@@ -1,5 +1,8 @@
 # UltraNBA
 
 
-Built on top of the original implementation from: https://github.com/magdalena-wysocki/ultra-nerf
-NeRF implementation based on: https://github.com/yenchenlin/nerf-pytorch
+
+### CODE ACKNOWLEDGEMENTS
+
+https://github.com/magdalena-wysocki/ultra-nerf
+https://github.com/yenchenlin/nerf-pytorch
