@@ -13,7 +13,6 @@ from config import config_parser
 from load_us import load_us_data
 from utils.nerf import (
     compute_loss,
-    compute_regularization,
     create_nerf,
     img2mse,
     render_us,
@@ -164,14 +163,6 @@ def train():
         optimizer.zero_grad()
 
         loss = compute_loss(output_image, target, args, losses)
-
-        if args.reg and i > args.r_warm_up_it:
-            reg = compute_regularization(
-                rendering_output,
-                losses,
-                weights=(args.r_lcc_penalty, args.r_tv_penalty, args.r_max_reflection),
-            )
-            loss = {**loss, **reg}
 
         total_loss = 0.0
         for loss_value in loss.values():
