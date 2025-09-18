@@ -10,7 +10,7 @@
 #SBATCH --mem=48G  # Memory in GB (Don't use more than 48/24 per GPU unless you absolutely need it and know what you are doing)
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ultrabarf
+conda activate ultranba
 python run_ultranerf.py --expname "nerf_reg_liver_1" --config configs/config_base_nerf_liver.txt --i_weights 20000 --reg --tensorboard --lrate 1.e-4 
 python run_ultranerf.py --expname "nerf_reg_liver_2" --config configs/config_base_nerf_liver.txt --i_weights 20000 --reg --tensorboard --lrate 1.e-5
 python run_ultranerf.py --expname "nerf_liver_1_no_reg" --config configs/config_base_nerf_liver.txt --i_weights 20000 --tensorboard --lrate 1.e-4

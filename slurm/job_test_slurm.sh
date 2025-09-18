@@ -11,5 +11,5 @@
 #SBATCH --mem=8G  # Memory in GB (Don't use more than 48/24 per GPU unless you absolutely need it and know what you are doing)
  
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ultrabarf
+conda activate ultranba
 python slurm/slurm_tester.py

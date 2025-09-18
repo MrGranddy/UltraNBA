@@ -11,9 +11,9 @@
 #SBATCH --mem=48G  # Memory in GB (Don't use more than 48/24 per GPU unless you absolutely need it and know what you are doing)
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ultrabarf
+conda activate ultranba
 
-python -m render_us /home/guests/{NAME}/UltraBARF-PyTorch/logs/lab_al_long_barf_reg_rot_0.07_tr_0.15_pr_1.0_0/args.txt
-python -m render_us /home/guests/{NAME}/UltraBARF-PyTorch/logs/lab_al_long_barf_reg_rot_0.07_tr_0.3_pr_1.0_0/args.txt
-python -m render_us /home/guests/{NAME}/UltraBARF-PyTorch/logs/lab_al_long_barf_reg_rot_0.15_tr_0.15_pr_1.0_0/args.txt
-python -m render_us /home/guests/{NAME}/UltraBARF-PyTorch/logs/lab_al_long_barf_reg_rot_0.15_tr_0.3_pr_1.0_0/args.txt
+python -m render_us /home/guests/{NAME}/UltraNBA-PyTorch/logs/lab_al_long_barf_reg_rot_0.07_tr_0.15_pr_1.0_0/args.txt
+python -m render_us /home/guests/{NAME}/UltraNBA-PyTorch/logs/lab_al_long_barf_reg_rot_0.07_tr_0.3_pr_1.0_0/args.txt
+python -m render_us /home/guests/{NAME}/UltraNBA-PyTorch/logs/lab_al_long_barf_reg_rot_0.15_tr_0.15_pr_1.0_0/args.txt
+python -m render_us /home/guests/{NAME}/UltraNBA-PyTorch/logs/lab_al_long_barf_reg_rot_0.15_tr_0.3_pr_1.0_0/args.txt

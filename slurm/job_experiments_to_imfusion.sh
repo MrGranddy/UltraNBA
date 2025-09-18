@@ -11,7 +11,7 @@
 #SBATCH --mem=32G  # Memory in GB (Don't use more than 48/24 per GPU unless you absolutely need it and know what you are doing)
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ultrabarf
+conda activate ultranba
 
 python -m tools.experiment_to_imfusion logs/liver_barf_reg_rot_0.07_tr_0.15_pr_1.0_0/args.txt
 python -m tools.experiment_to_imfusion logs/liver_barf_reg_rot_0.07_tr_0.3_pr_1.0_0/args.txt

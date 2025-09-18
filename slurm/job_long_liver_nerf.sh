@@ -11,7 +11,7 @@
 #SBATCH --mem=48G  # Memory in GB (Don't use more than 48/24 per GPU unless you absolutely need it and know what you are doing)
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ultrabarf
+conda activate ultranba
 
 # Define arrays for parameters
 tss=(0.15 0.3)

@@ -12,7 +12,7 @@
 #SBATCH --nodelist=corellia
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ultrabarf
+conda activate ultranba
 python run_noisy_barfs.py \
     --data_dir /home/guests/{NAME}/ultrasound_data/original/liver \
     --base_config_barf configs/config_base_barf_liver.txt \

@@ -57,7 +57,7 @@ if __name__ == "__main__":
             # Construct the training command
             train_command = [
                 "python",
-                "run_ultrabarf.py",
+                "run_ultranba.py",
                 "--expname",
                 expname,
                 "--pose_path",

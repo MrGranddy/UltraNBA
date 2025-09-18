@@ -10,8 +10,8 @@
 #SBATCH --mem=48G  # Memory in GB (Don't use more than 48/24 per GPU unless you absolutely need it and know what you are doing)
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ultrabarf
+conda activate ultranba
 
-python run_ultrabarf.py --expname "lab_al_barf_no_freq_ab" --config configs/config_lab_al_freq.txt --i_weights 10000 --reg --tensorboard --no_freq_adjustment
+python run_ultranba.py --expname "lab_al_barf_no_freq_ab" --config configs/config_lab_al_freq.txt --i_weights 10000 --reg --tensorboard --no_freq_adjustment
 python run_ultranerf.py --expname "lab_al_nerf_ab" --config configs/config_lab_al_freq.txt --i_weights 10000 --reg --tensorboard --multires 16
-python run_ultrabarf.py --expname "lab_al_barf_ab" --config configs/config_lab_al_freq.txt --i_weights 10000 --reg --tensorboard
+python run_ultranba.py --expname "lab_al_barf_ab" --config configs/config_lab_al_freq.txt --i_weights 10000 --reg --tensorboard
